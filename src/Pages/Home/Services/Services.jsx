@@ -5,13 +5,15 @@ import ServiceCard from './ServiceCard';
 
 const Services = () => {
 
-    const [services, SetServices] = useState([])
+    const [services, setServices] = useState([])
 
     useEffect( ()=>{
-        fetch('Services.json')
+        fetch('http://localhost:5000/services')
         .then(res => res.json())
-        .then(data => SetServices(data))
+        .then(data => setServices(data))
     }, [] )
+
+  
     return (
         <div className='mt-8'>
             <div className='text-center'>

@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
 import img from '../../assets/images/login/login.svg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 const SignUp = () => {
 
     const {createUser} = useContext(AuthContext)
+    const navigate = useNavigate()
     const handlesignup = event =>{
 
         event.preventDefault();
@@ -19,6 +20,7 @@ const SignUp = () => {
         .then(result =>{
             console.log(result.user)
             event.target.reset()
+            navigate('/')
         })
         .catch(error =>{
             console.log(error.message)

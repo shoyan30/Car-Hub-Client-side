@@ -1,0 +1,44 @@
+/* body.light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+
+body.dark {
+    --background-color: #121212;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.login{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.logout{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.sunicon{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.App-header {
+    text-align: center;
+    padding: 2rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+} */
